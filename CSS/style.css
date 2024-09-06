@@ -15,16 +15,20 @@ a,a:hover{
     text-decoration: none;
 }
 a:hover{
-    color: yellow;
+    color: #FFC107;
 }
 ul,ol{
     margin: 0;
     padding: 0;
 
 }
-.navigation-wrap{
+.navigation-wrap {
     background-color: transparent;
-    color: transparent';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
 }
 
 html{
@@ -47,9 +51,10 @@ body{
 }
 
 .navbar-wrap{
-    position: fixed;
+   
     width: 100%;
     left: 0;
+    top: 0;
     z-index: 1000;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out ;
@@ -64,15 +69,15 @@ body{
     box-shadow: none;
 }
 
-.nav-link{
+.navbar .nav-link{
     font-size: 0.9375rem;
     font-weight: 600;
     text-transform: capitalize;
     color: white;
     letter-spacing: 1px;
 }
-.nav-link:hover, .nav-link:active{
-    color: yellow;!important
+.navbar .nav-link:hover, .nav-link:active{
+    color: #FFC107;!important
 }
 .navigation-wrap .main-btn{
     padding: 0.3125rem 1.4375rem;
@@ -80,20 +85,16 @@ body{
     margin-left: 0.625rem;
 
 }
-.navbar-wrap .scroll-on{
-    position:fixed;
-    background-color: white;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.09);
-    transition: all 0.15s ease-in-out 0s;
+.navbar-wrap.scroll-on {
+    background-color: transparent; /* Keep it transparent */
+    box-shadow: none; /* Remove shadow */
 }
+
 .navbar-wrap .scroll-on .nav-link{
-    color: black;
+    color: white;
 }
-.navbar-wrap .scroll-on .nav-link:hover, .navbar-wrap .scroll-on .nav-link.nav-link:active{
-    color: yellow;
+.navbar-wrap .scroll-on .nav-link:hover, .navbar-wrap .scroll-on .nav-link:active{
+    color: #FFC107;
 }
 
 
@@ -105,7 +106,7 @@ h1{
     text-shadow: 1px 0 6px black;
 }
 h1 span{
-    color: yellow;
+    color: #FFC107;
 }
 h2{
     font-weight: 700;
@@ -124,8 +125,8 @@ p{
     display: inline-block;
     padding: 0.35rem .75rem;
     line-height: 1.675rem;
-    background-color: yellow;
-    border: 0.1875rem solid yellow;
+    background-color: #FFC107;
+    border: 0.1875rem solid #FFC107;
     font-size: 1.3rem;
     font-weight: 600;
     font-style: italic;
@@ -140,9 +141,13 @@ p{
 
 .main-btn:hover{
     background-color: transparent;
-    color:yellow;
+    color:#FFC107;
 }
-
+.btn-outline-warning{
+    color: black;
+    text-decoration: none !important;
+    text-decoration: unset;
+}
 .top-banner{
     width: 100%;
     background: url(../Images/bg/bg-1.jpg) no-repeat center;
