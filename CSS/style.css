@@ -47,7 +47,7 @@ body{
     background: white;
 }
 ::-webkit-scrollbar-thumb{
-    background: green;
+    background: #198754;
 }
 
 .navbar-wrap{
@@ -111,7 +111,7 @@ h1 span{
 h2{
     font-weight: 700;
     font-size: 2rem;
-    color: green;
+    color: #198754;
     text-transform: capitalize;
 }
 p{
@@ -156,4 +156,92 @@ p{
 }
 .top-banner p{
     color: white;
+}
+
+
+.our-menu .card{
+    border: none;
+}
+.our-menu .link_category_product{
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+.our-menu .link_category_product::before{
+    position:absolute;
+    content: '';
+    top: 50%;
+    left: 50% ;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid brown;
+    z-index:-1;
+    transform:translateX(-50%) translateY(-50%) scale(0);
+    background:#FFC107;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.card:hover .link_category_product::before{
+    transform:translateX(-50%) translateY(-50%) scale(1);
+}
+
+
+.our-menu .cat-title a{
+    text-align: center;
+    font-size: 0.8125rem;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+}
+.card:hover .cat-title a{
+    color: #FFC107;
+}
+
+.about-section{
+    background:#333333;
+
+}
+.about-section .card, .about-section .card img{
+    border-radius: 0.625rem;
+
+
+}
+.about-section .text-sec{
+    padding-left: 2rem;
+}
+
+.food-type{
+    padding-top: 3.25rem;
+}
+.food-type ul li{
+    font-size: 1rem;
+    color:antiquewhite;
+    line-height: 32px;
+    position:relative;
+    margin-left: 30px;
+}
+.food-type p, .about-section p{
+    color: rgba(250, 235, 215, 0.696);
+}
+.food-type ul li::before{
+    position: absolute;
+    left: -2.1875rem;
+    color: #FFC107;
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+
+
+
 }
