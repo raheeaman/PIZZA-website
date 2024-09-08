@@ -50,7 +50,7 @@ body{
     background: #198754;
 }
 
-.navbar-wrap{
+.navigation-wrap{
    
     width: 100%;
     left: 0;
@@ -85,15 +85,17 @@ body{
     margin-left: 0.625rem;
 
 }
-.navbar-wrap.scroll-on {
-    background-color: transparent; /* Keep it transparent */
-    box-shadow: none; /* Remove shadow */
+
+.navigation-wrap.scroll-on {
+    background-color:aliceblue;
+    box-shadow:none
 }
 
-.navbar-wrap .scroll-on .nav-link{
-    color: white;
+.navigation-wrap.scroll-on .nav-link {
+    color: black;
 }
-.navbar-wrap .scroll-on .nav-link:hover, .navbar-wrap .scroll-on .nav-link:active{
+
+.navigation-wrap.scroll-on .nav-link:hover {
     color: #FFC107;
 }
 
