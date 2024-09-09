@@ -89,6 +89,7 @@ body{
 .navigation-wrap.scroll-on {
     background-color:aliceblue;
     box-shadow:none
+    
 }
 
 .navigation-wrap.scroll-on .nav-link {
@@ -245,5 +246,34 @@ p{
     font-weight: 900;
 
 
+
+}
+.explore-food{
+    background-color: #333333;
+}
+
+.explore-food .card{
+    border: none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+
+}
+.explore-food .card img{
+    border-radius: 15px 15px 0 0 ;
+    object-fit: cover;
+}
+.explore-food .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFC107;
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid white;
+}
+
+.explore-food p{
+    color:aliceblue;
+    font-size: 14px;
+    line-height: 22px;
 
 }
