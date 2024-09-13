@@ -7,30 +7,39 @@
     .navigation-wrap .navigation-brand img{
         height: 3.8125rem;
     } 
-    .navigation-wrap {
+    .navigation-wrap{
         text-align: center;
-        background-color: #FFC107;
+        background-color:#2f2f2f;
+        padding: 5px;
     }
+    .navigation-wrap img{
+        height: 30px;
+        padding: none;
+    }
+
     .navigation-wrap .nav-link{
-        line-height: 1.875rem;
+        line-height: 0.875rem;
         color: black;
     }
     .top-banner{
         padding: 9.375rem 0 9.375rem;
     }
     .nav-item .nav-link{
-        color:rgb(100, 11, 11)!important;
+        color:white!important;
         
     }
     .nav-item .nav-link:hover{
         color: black!important;
     }
     .btn{
-        color:rgb(100, 11, 11);
+        color:black;
     }
     .btn:hover{
         color: #FFC107;
         background-color: black;
+    }
+    .footer .footer-social a i{
+        padding: 0 0.75rem;
     }
 
     
@@ -49,11 +58,29 @@
         padding:10.375rem 9.375rem;
     }
     .nav-item .nav-link{
-        color:rgb(100, 11, 11)!important;
+        color:white!important;
         
     }
     .nav-item .nav-link:hover{
         color: black!important;
     }
+    .review-section .carousel-caption p{
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+    .footer p{
+        font-size: 11px;
+    }
+}
+@media(max-width:395px){
+    .review-section .carousel-caption p{
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+    .footer p{
+        font-size: 10px;
+    }
 
 }
+
+
