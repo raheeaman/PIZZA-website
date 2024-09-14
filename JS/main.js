@@ -1,10 +1,18 @@
 
-  window.addEventListener("scroll", function() {
-    var navbar = document.querySelector(".navigation-wrap");
-    navbar.classList.toggle("scroll-on", window.scrollY > 0);
-  });
+  // window.addEventListener("scroll", function() {
+  //   var navbar = document.querySelector(".navigation-wrap");
+  //   navbar.classList.toggle("scroll-on", window.scrollY > 0);
+  // });
 
-
+  window.onscroll = function () {
+    var nav = document.querySelector('.navigation-wrap');
+    if (window.scrollY > 50) {
+      nav.classList.add('scroll-on');
+    } else {
+      nav.classList.remove('scroll-on');
+    }
+  };
+  
   document.addEventListener("DOMContentLoaded", function() {
     var navbarCollapse = document.querySelector(".navbar-collapse");
     var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
