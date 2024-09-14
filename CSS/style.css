@@ -12,7 +12,7 @@
 }
 
 a,a:hover{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .navbar-nav .nav-link {
     color: white !important;
